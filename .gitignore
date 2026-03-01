@@ -1,0 +1,52 @@
+
+venv/
+
+# Python コンパイル済みファイル
+__pycache__/
+*.pyc
+*.pyd
+
+# 機密ファイル (APIキーなど)
+API Key.txt
+API Key_Azure.txt
+api_keys.json
+
+
+
+# live2d_related/ 内のすべてのファイルを無視 (生成ファイルやユーザー生成データが含まれる場合)
+/live2d_related/
+
+# reference_audio/ 内のすべてのファイルを無視 (大きなファイルやユーザー生成データが含まれる場合)
+/reference_audio/
+
+/training_dir/
+
+# IDE およびエディタの設定
+.vscode/
+.idea/
+*.suo
+*.user
+.DS_Store
+Thumbs.db
+
+# ログファイル
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# 一時ファイルとデータベース
+*.tmp
+*.temp
+*.sqlite3
+*.db
+
+# バックアップファイル
+*.bak
+*.orig
+*.swp
+*~
+/font/
+/if_delete_audio_cache.txt
+/is_fp32.txt
