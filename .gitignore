@@ -1,5 +1,6 @@
 
 venv/
+.env
 
 # Python コンパイル済みファイル
 __pycache__/

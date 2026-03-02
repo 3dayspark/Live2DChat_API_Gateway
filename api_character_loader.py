@@ -56,10 +56,7 @@ class GetCharacterAttributes:
                     character.icon_path = max(program_icon_paths, key=os.path.getmtime)
 
                 # Live2D JSON
-                live2d_json_files = glob.glob(os.path.join(full_path, 'live2D_model', "*.model.json"))
-                if live2d_json_files:
-                    latest_live2d_json = max(live2d_json_files, key=os.path.getmtime)
-                    character.live2d_json = f"/models/{character.character_folder_name}/live2D_model/{os.path.basename(latest_live2d_json)}"
+                character.live2d_json = f"/models/{character.character_folder_name}/live2D_model/3.model.json"
 
                 # キャラクター設定（プロンプト用）
                 desc_file_path = os.path.join(full_path, 'character_description.txt')
